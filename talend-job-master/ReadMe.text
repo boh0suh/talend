@@ -1,0 +1,14 @@
+Steps to create a docker image from talend job
+
+1. download docker hub
+2. build talend job as zip file 
+3. unzip zip file and copy all under this file (talend-job-master)
+4. open dockerfile and change entrypoint so that it can run the new sh file you created. 
+5. open command line and set directory 
+6. build docker image using follow command: docker build -t nameyourdockerimage:latest .
+7. check if it is created successfully: docker image ls
+8. run docker image: docker run nameyourdockerimage
+
+
+
+
